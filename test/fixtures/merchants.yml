@@ -1,11 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 gouble_store:
+  id: 56
   name: Gouble Store
   email: gouble@example.com
   cif: 99999X
 
 abb_store:
+  id: 78
   name: Abb Store
   email: abbstore@example.com
   cif: 55566X

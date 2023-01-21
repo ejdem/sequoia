@@ -1,11 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 adam_krawiec:
+  id: 34
   name: Adam Krawiec
   email: adam.krawiec@example.com
   nif: '12345A'
 
 george_byron:
+  id: 17
   name: George Byron
   email: geo.byro@example.com
   nif: '23456C'
