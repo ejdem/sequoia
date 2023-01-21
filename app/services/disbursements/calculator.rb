@@ -11,7 +11,7 @@ module Disbursements
 
       total_fee = disbursement.orders.completed_for_week(week).pluck(:amount).sum { |a| a * fee(a) }
       disbursement.amount = total_fee
-      disburment.save
+      disbursement.save
     end
 
     private
