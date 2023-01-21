@@ -7,6 +7,6 @@ class Order < ApplicationRecord
   def self.completed_for_week(week)
     week = Date.parse(week)
 
-    where(created_at: week.beginning_of_week..week.end_of_week).completed
+    where(completed_at: week.beginning_of_week..week.end_of_week)
   end
 end
