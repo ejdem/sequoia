@@ -1,8 +1,9 @@
-json.disburments @disburments do |disburment|
-  json.extract disburment, :id, :value
+json.merchants @merchants do |merchant|
+  json.extract! merchant, :id, :name
 
-  json.merchant do
-    json.id disburment.merchant_id
-    json.name disburment.merchant.name
+  json.disbursements merchant.disbursements do |disburment|
+    json.id disburment.id
+    json.week disburment.week
+    json.amount disburment.amount
   end
 end

@@ -35,7 +35,12 @@ Things you may want to cover:
   - [x] add rake tasks for them
 - [x] adds dummy disbursements endpoint, and json schema
 - [x] disbursement model: merchant_id, amount(decimal)  
-- [ ] add rake task, to compute Disbursements
+  - [ ] store week on disbusement
+- [ ] add rake task, to compute Disbursements:
+  - [x] add service class to compute total fee amount
+  - [ ] test the service
+  - [ ] adds rake task calling the serivce
+  - store fee in a postgress?
 
 
 Disbusment requirements:

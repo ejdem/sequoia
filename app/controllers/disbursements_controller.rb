@@ -1,7 +1,7 @@
 class DisbursementsController < ApplicationController
   def index
-    @disburments = Disbursement.active.includes(:merchant).then do |q|
-      params[:merchant_id].present? ? q.where(merchant_id: params[:merchant_id]) : q
-    end
+    @merchants = Merchant.includes(:disbursements)
+                         .then { |q| q.by_id(params[:merchant_id]) }
+                         .then { |q| q.with_disbursements(params[:week]) }
   end
 end
