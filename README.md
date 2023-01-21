@@ -22,3 +22,26 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+- [x] add models for:
+  - [x] merchants
+  - [x] orders
+  - [x] shoppers
+- [ ]  validations for models? 
+- [ ] add importer classes:
+  - [ ] merchants
+  - [ ] orders
+  - [ ] shoppers
+  - [x] add rake tasks for them
+- [ ] add rake task, to compute Disbursements
+- [ ] add endpoint to display for a merchant (disburments?merchant_id=)
+
+
+Disbusment requirements:
+- Order.completed - orders where completed_at < Time.current and where created_at > last_monday
+- make sure no order is computed twice!
+- fee:
+  - 1% < 50E
+  - 0.95% >=50 && < 300E
+  - 0.85% >= 300E
+  ? Should fees and brackets be configurable?

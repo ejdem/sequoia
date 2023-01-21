@@ -10,8 +10,9 @@ gem "pg"
 
 gem "puma", "~> 5.0"
 
-
 gem "jbuilder"
+
+gem "csv"
 
 # Workers
 gem 'redis'
