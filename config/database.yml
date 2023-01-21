@@ -18,8 +18,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: sequoia_development
+  database: sequoia_test
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: sequoia_production

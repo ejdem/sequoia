@@ -27,14 +27,15 @@ Things you may want to cover:
   - [x] merchants
   - [x] orders
   - [x] shoppers
-- [ ]  validations for models? 
-- [ ] add importer classes:
-  - [ ] merchants
-  - [ ] orders
-  - [ ] shoppers
+- [ ]  validations for models?
+- [x] add importer classes:
+  - [x] merchants
+  - [x] orders
+  - [x] shoppers
   - [x] add rake tasks for them
+- [x] adds dummy disbursements endpoint, and json schema
+- [x] disbursement model: merchant_id, amount(decimal)  
 - [ ] add rake task, to compute Disbursements
-- [ ] add endpoint to display for a merchant (disburments?merchant_id=)
 
 
 Disbusment requirements:
