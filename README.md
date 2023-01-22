@@ -6,22 +6,25 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-
+2.7
 * System dependencies
-
+- postgres
 * Configuration
 
 * Database creation
 
 * Database initialization
+`rails db:migrate`
+to load initial data
+merchants: `rake data_import:merchants\['../path/to/merchants.csv'\]`
+shoppers: `rake data_import:shoppers\['../path/to/shoppers.csv'\]`
+orders: `rake data_import:orders\['../path/to/orders.csv'\]`
+
+Please run orders as the last one, so there are merchants and shoppers matching.
 
 * How to run the test suite
+`rails test`
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 
 - [x] add models for:
   - [x] merchants
