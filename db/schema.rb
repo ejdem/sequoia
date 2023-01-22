@@ -16,7 +16,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_21_225439) do
 
   create_table "disbursements", force: :cascade do |t|
     t.bigint "merchant_id", null: false
-    t.decimal "amount", precision: 2
+    t.decimal "amount", precision: 10, scale: 2
+    t.date "week"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["merchant_id"], name: "index_disbursements_on_merchant_id"
